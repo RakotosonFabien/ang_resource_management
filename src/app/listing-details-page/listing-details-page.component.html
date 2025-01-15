@@ -1,0 +1,14 @@
+<div>
+    <a routerLink="/listings">
+        <button>Back</button>
+    </a>
+    <h2>{{listing?.id}} - {{listing?.name}}</h2>
+    <h3>{{listing?.age}} years old</h3>
+
+    <a routerLink="/listing-modif/{{listing?.id}}">
+        <button>Modify</button>
+    </a>
+    <a (click)="deleteListing()">
+        <button>Delete</button>
+    </a>
+</div>
